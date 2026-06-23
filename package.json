@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "cd backend && npm run dev",
-    "dev:full": "cd backend && npm run dev:full",
+    "dev:full": "cd backend && npm install && node src/server.js",
     "install:all": "cd backend && npm install && cd ../frontend && npm install",
     "start": "cd backend && npm start"
   },
