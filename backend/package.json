@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "node --watch src/server.js",
     "start": "node src/server.js",
-    "install:all": "npm install && cd ../frontend && npm install && cd ../backend",
-    "dev:full": "npm install && cd ../frontend && npm install && npm run build && cd ../backend && node src/server.js"
+    "dev:full": "npm install && node src/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
