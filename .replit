@@ -1,4 +1,4 @@
-run = "npm run dev:full"
+run = "bash start-replit.sh"
 modules = ["nodejs-18"]
 
 [nix]
@@ -7,7 +7,3 @@ channel = "stable-23_05"
 [[ports]]
 localPort = 3000
 externalPort = 80
-
-[[ports]]
-localPort = 5173
-externalPort = 5173
