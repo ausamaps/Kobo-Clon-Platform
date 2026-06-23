@@ -1,8 +1,7 @@
 run = "bash start-replit.sh"
-modules = ["nodejs-18"]
 
 [nix]
-channel = "stable-23_05"
+channel = "stable-24_05"
 
 [[ports]]
 localPort = 3000
