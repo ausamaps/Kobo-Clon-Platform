@@ -1,0 +1,16 @@
+{
+  "name": "kobo-clon-platform",
+  "version": "1.0.0",
+  "description": "Plataforma para crear formularios dinámicos",
+  "main": "backend/src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "cd backend && npm run dev",
+    "dev:full": "cd backend && npm run dev:full",
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["formularios", "encuestas", "kobo"],
+  "author": "ausamaps",
+  "license": "MIT"
+}
