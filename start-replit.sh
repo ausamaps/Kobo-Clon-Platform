@@ -1,46 +1,22 @@
 #!/bin/bash
 
 echo "========================================="
-echo "  Iniciando Kobo Clon Platform"
+echo "  Kobo Clon Platform - Replit"
 echo "========================================="
 echo ""
 
 # Instalar backend
-echo "📦 Instalando backend..."
+echo "📦 Instalando dependencias..."
 cd backend
-npm install --legacy-peer-deps
-if [ $? -ne 0 ]; then
-    echo "❌ Error instalando backend"
-    exit 1
-fi
+npm install
 
-# Instalar frontend
 echo ""
-echo "📦 Instalando frontend..."
-cd ../frontend
-npm install --legacy-peer-deps
-if [ $? -ne 0 ]; then
-    echo "❌ Error instalando frontend"
-    exit 1
-fi
-
-# Construir frontend
-echo ""
-echo "🔨 Compilando frontend..."
-npm run build
-if [ $? -ne 0 ]; then
-    echo "❌ Error compilando frontend"
-    exit 1
-fi
-
-# Iniciar backend
-echo ""
-echo "✅ Instalación completada!"
+echo "✅ Listo!"
 echo ""
 echo "========================================="
 echo "  🚀 Iniciando servidor..."
 echo "========================================="
 echo ""
 
-cd ../backend
+# Iniciar backend
 npm start
