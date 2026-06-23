@@ -63,19 +63,40 @@ kobo_clon_platform/
 - Node.js 16+
 - npm o yarn
 
-### Pasos
+### Opción 1: Script automático (RECOMENDADO)
+
+```bash
+# Windows
+git clone https://github.com/ausamaps/Kobo-Clon-Platform.git
+cd Kobo-Clon-Platform
+start.bat
+
+# Mac/Linux
+git clone https://github.com/ausamaps/Kobo-Clon-Platform.git
+cd Kobo-Clon-Platform
+chmod +x start.sh
+./start.sh
+```
+
+El script automáticamente:
+- Instala dependencias
+- Inicia backend en http://localhost:4000
+- Inicia frontend en http://localhost:5173
+- Abre el navegador
+
+### Opción 2: Manual
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tuusuario/kobo_clon_platform.git
-cd kobo_clon_platform
+git clone https://github.com/ausamaps/Kobo-Clon-Platform.git
+cd Kobo-Clon-Platform
 
-# Backend
+# Backend (terminal 1)
 cd backend
 npm install
 npm run dev        # Corre en http://localhost:4000
 
-# Frontend (en otra terminal)
+# Frontend (terminal 2)
 cd frontend
 npm install
 npm run dev        # Corre en http://localhost:5173
