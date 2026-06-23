@@ -1,0 +1,18 @@
+# Archivos a ignorar en Google Cloud
+node_modules/
+npm-debug.log*
+.git/
+.gitignore
+.github/
+.vscode/
+.idea/
+dist/
+build/
+coverage/
+*.log
+.env
+.env.local
+start.bat
+start.sh
+Dockerfile
+.dockerignore

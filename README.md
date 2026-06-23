@@ -156,6 +156,40 @@ npm run dev        # Corre en http://localhost:5173
 
 ---
 
+## ☁️ Desplegar en Google Cloud Run
+
+### Requisitos
+- Cuenta en [Google Cloud](https://cloud.google.com)
+- `gcloud` CLI instalado ([descargar](https://cloud.google.com/sdk/docs/install))
+
+### Pasos
+
+```bash
+# 1. Autenticarse
+gcloud auth login
+
+# 2. Configurar proyecto (reemplaza PROJECT_ID)
+gcloud config set project PROJECT_ID
+
+# 3. Desplegar
+gcloud run deploy kobo-clon \
+  --source . \
+  --platform managed \
+  --region us-central1 \
+  --allow-unauthenticated
+
+# Tu app estará en: https://kobo-clon-XXXXX.run.app
+```
+
+**O desde Google Cloud Console:**
+1. Ve a Cloud Run
+2. Click "Deploy container"
+3. Conecta tu repositorio GitHub
+4. Selecciona `Kobo-Clon-Platform`
+5. Click Deploy
+
+---
+
 ## 🔄 Próximos pasos
 
 - [ ] Migración a PostgreSQL/PostGIS

@@ -1,4 +1,7 @@
-const BASE_URL = "http://localhost:4000/api";
+// En producción, usa rutas relativas. En desarrollo, apunta a localhost:4000
+const BASE_URL = import.meta.env.MODE === "production"
+  ? "/api"
+  : "http://localhost:4000/api";
 
 export async function listForms() {
   const res = await fetch(`${BASE_URL}/forms`);
